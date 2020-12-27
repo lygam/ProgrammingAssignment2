@@ -22,7 +22,7 @@ cacheSolve <- function(x, ...) {
     print("Inverse has already been calculated. Retrieving cached data...")
     return(inversemat)
   }
-  initialmat <- x$getmatrix()
+  initialmat <- x$getmat()
   inversemat <- solve(initialmat, ...)
   x$setinverse(inversemat)
   inversemat
